@@ -1,0 +1,44 @@
+.page-header {
+    line-height: 1;
+    border-bottom: 1px solid #e5e5e5;
+}
+  
+.page-header-logo {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 2.25rem;
+}
+  
+.page-header-logo:hover {
+    text-decoration: none;
+}
+
+.canvas-div {
+    min-height: 500px;
+}
+
+.coding-div {
+    min-height: unset;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.canvas {
+    margin-top: 13px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.card {
+    height: 100%;
+}
+
+.dividing-div {
+    height: 700px;
+}
+.editor {
+    height: 600px;
+}

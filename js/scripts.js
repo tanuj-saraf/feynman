@@ -265,6 +265,44 @@ function renderStartScreenAndRun() {
 
 /**************************GAME END*****************************************/
 
+/**************************EDITOR FUNCTIONS START***************************/
+
+function setBackground(bg){
+    var img = new Image();
+    // image name
+    BACKGROUND = bg;
+    BG_FILE_NAME = "img/"+BACKGROUND;
+    img.src = BG_FILE_NAME;
+    img.onload = function(){
+        //ctx.drawImage(img, 0, 0);
+    }
+    ctx.drawImage(img, 0, 0);
+}
+
+function addUserPaddle(color){
+    user.color = color;
+    drawRect(user.x, user.y, user.width, user.height, user.color);
+    ctx.fillStyle = color;
+    ctx.fillRect(user.x, user.y, user.width, user.height);
+}
+
+function addComPaddle(color){
+    com.color = color;
+    drawRect(com.x, com.y, com.width, com.height, com.color);
+    ctx.fillStyle = color;
+    ctx.fillRect(com.x, com.y, com.width, com.height);
+}
+
+function addBall(size, color){
+    ball.radius = size;
+    ball.color = color;
+    drawArc(ball.x, ball.y, ball.radius, ball.color);
+}
+
+
+
+/**************************EDITOR FUNCTIONS END*****************************/
+
 function run(){
     console.log("Exec called");
     var text = eh.getValue();

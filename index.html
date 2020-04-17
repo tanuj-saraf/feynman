@@ -12,18 +12,24 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+
+	<!-- particles.js container -->
+<div id="particles-js"></div>
+
+<!-- <canvas class="particles-js-canvas-el" style="width:100%; height:100%;"></canvas> -->
+
+<div class="container-fluid overflow-hidden">
         <!-- Header Start -->
         <header class="page-header py-3">
-            <div class="row flex-nowrap justify-content-between align-items-center">
-                <div class="col-12 text-center">
+            <div class="row flex-nowrap justify-content-between align-items-center overflow-hidden">
+                <div class="col-12 text-center overflow-hidden">
                     <a class="page-header-logo text-dark" href="#">Feynman Project</a>
                 </div>
             </div>
         </header>
         <!-- Header End -->
         <br />
-        <div class="row">
+        <div class="row overflow-hidden">
             <!-- Coding Panel -->
             <div class="col-md-6 dividing-div">
                 <div
@@ -40,14 +46,22 @@
                 </div>
             </div>
             <!-- Canvas Panel -->
-            <div class="col-md-6 dividing-div" style="background-image:url(https://www.pngmart.com/files/4/iPad-PNG-Free-Download.png); width:200px; height:700px; transform: rotate(-90deg);">
-                    <div style="padding-top:20px; padding-left:310px;  transform: rotate(90deg);">
+            <div class="col-md-6 dividing-div overflow-hidden" style="background-image:url(https://www.pngmart.com/files/4/iPad-PNG-Free-Download.png); width:200px; height:666px; transform: rotate(-90deg);">
+                    <div style="padding-top:28px; padding-left:310px;  transform: rotate(90deg);">
                         <canvas class="canvas" id="canvas" height="350px" width="470px"></canvas>
                     
                 </div>
             </div>
         </div>
     </div>
+
+
+
+<!-- scripts -->
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+
+    
 
     <!-- Bootstrap Integration -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

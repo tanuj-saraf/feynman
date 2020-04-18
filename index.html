@@ -13,12 +13,12 @@
 
 <body>
 
-	<!-- particles.js container -->
-<div id="particles-js"></div>
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
 
-<!-- <canvas class="particles-js-canvas-el" style="width:100%; height:100%;"></canvas> -->
+    <!-- <canvas class="particles-js-canvas-el" style="width:100%; height:100%;"></canvas> -->
 
-<div class="container-fluid overflow-hidden">
+    <div class="container-fluid overflow-hidden">
         <!-- Header Start -->
         <header class="page-header py-3">
             <div class="row flex-nowrap justify-content-between align-items-center overflow-hidden">
@@ -29,9 +29,7 @@
         </header>
         <!-- Header End -->
         <br />
-
-        <div class="row">
-
+        <div class="row overflow-hidden">
             <!-- Coding Panel -->
             <div class="col-md-6 dividing-div">
                 <div
@@ -40,7 +38,8 @@
                         <div class="row">
                             <strong class="col-6 d-inline-block mb-2 text-success">Editor</strong>
                             <div class="col-6">
-                                <button class="col-6 d-inline-block mb-2 btn btn-success float-right" onclick="run()">Play</button>
+                                <button class="col-6 d-inline-block mb-2 btn btn-success float-right"
+                                    onclick="run()">Play</button>
                             </div>
                         </div>
                         <div id="code_editor" class="editor"></div>
@@ -48,12 +47,40 @@
                 </div>
             </div>
             <!-- Canvas Panel -->
+            <div class="col-md-6 dividing-div overflow-hidden"
+                style="background-image:url(https://www.pngmart.com/files/4/iPad-PNG-Free-Download.png); width:200px; height:666px; transform: rotate(-90deg);">
+                <div style="padding-top:28px; padding-left:310px;  transform: rotate(90deg);">
+                    <canvas class="canvas" id="canvas" height="350px" width="470px"></canvas>
 
-            <div class="col-md-6 dividing-div" style="background-image:url(https://www.pngmart.com/files/4/iPad-PNG-Free-Download.png); width:200px; height:700px; transform: rotate(-90deg);">
-                    <div style="padding-top:20px; padding-left:310px;  transform: rotate(90deg);">
+                </div>
+            </div>
+        </div>
+    </div>
 
-                        <canvas class="canvas" id="canvas" height="350px" width="470px"></canvas>
-                    
+    <!-- MODAL -->
+    <!-- Modal -->
+    <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">WELCOME TO PROJECT FEYNMAN !!!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Use the functions:<br />
+                        setBackground(&#34;&lt;IMAGE_NAME&gt;&#34;);<br />
+                        addUserPaddle(&#34;&lt;COLOR&gt;&#34;);<br />
+                        addComPaddle(&#34;&lt;COLOR&gt;&#34;);<br />
+                        addBall(&lt;SIZE&gt;&#44; &#34;&lt;COLOR&gt;&#34;);<br />
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Let's go!</button>
                 </div>
             </div>
         </div>
@@ -61,12 +88,10 @@
 
 
 
+    <!-- scripts -->
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
 
-<!-- scripts -->
-<script src="js/particles.js"></script>
-<script src="js/app.js"></script>
-
-    
 
 
     <!-- Bootstrap Integration -->

@@ -5,6 +5,12 @@ function setEditor() {
 }
 setEditor();
 
+// MODAL
+
+$(function() {
+    $('#basicExampleModal').modal('show');
+});
+
 
 /*******************GAME STARTS FROM HERE**********************/
 // select canvas element

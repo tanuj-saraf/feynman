@@ -114,7 +114,7 @@ function drawNet() {
 // draw text
 function drawText(text, x, y) {
     ctx.fillStyle = TEXT_COLOR;
-    ctx.font = "75px fantasy";
+    ctx.font = "55px fantasy";
     ctx.fillText(text, x, y);
 }
 
